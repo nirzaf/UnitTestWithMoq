@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fSW8ASzY4XYIopl48xZgbyxmVkJHUAHKrHLrCLLWZjLqy3lNKb0cQcANNOFL7XzFcnOpyHDhn+8ADpbmlx/h7g==",
+  "dgSpecHash": "mBLMSs0Q9x/1ah96UUNGC4UxDu9ElO45kMM2Lgc4eo/Zcg2cnUZZW2+1PjNciP/BM3UujmiqaWu2lH2KxLER1Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\mmfazrin\\RiderProjects\\Harsha\\18. xUnit [Advanced], Moq and Repository\\16. Integration Test with Response Body\\ServiceContracts\\ServiceContracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mmfazrin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\mmfazrin\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

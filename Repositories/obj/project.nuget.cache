@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JgBcSY9I0MqokjTKT/nbsVfIvE1d5SShBuvXCFNpYLzI7jRueRoZ2HjaONY2RBRLXra++00eAOBH33KjGSaWcA==",
+  "dgSpecHash": "3iaJ2eI3f7zhR/Tb67S+4S5+lYt85uFhQPG/BkzG7b3tH5SwEgALhlAB9j2GjNb1v0CpOQ8AipI1V/Z6uiEwOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mmfazrin\\RiderProjects\\Harsha\\18. xUnit [Advanced], Moq and Repository\\16. Integration Test with Response Body\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mmfazrin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\mmfazrin\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

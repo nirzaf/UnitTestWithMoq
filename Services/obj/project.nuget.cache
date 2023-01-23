@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yH9EDX5eDBRCZvFiu8tPxysf8EVaxfBnZpJ081ogD/tRyQCFitva4h2te3O6/c79MWglByNcAoXhmFnmrU6FVw==",
+  "dgSpecHash": "K/My9dy25gyifVhVox5wJ3p+gm8tkXGLMWVZrFVfLoZ8i/yI4f5s2xy5tA+R4XKCsMRTnBKk139UqIvOVpyKCw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mmfazrin\\RiderProjects\\Harsha\\18. xUnit [Advanced], Moq and Repository\\16. Integration Test with Response Body\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mmfazrin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\mmfazrin\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\epplus\\6.1.2\\epplus.6.1.2.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",

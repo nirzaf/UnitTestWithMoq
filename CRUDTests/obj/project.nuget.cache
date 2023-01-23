@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hH2HbVFaAPnTbMsIqUcsYpa+//1LsA3qBy/10uLZP6jT80GU4J+xLKf7np4H3bc5ViRp6g/jGJP6ZNtnAT5WDw==",
+  "dgSpecHash": "I5KeuHY0KdfMunaEEskJnKBe4NVMlaLyYtHgY6VxOo+wU+9AjDt8FjvuxQlrEtyHhm6qTUZ0hcUPFGaSAAGUww==",
   "success": true,
   "projectFilePath": "C:\\Users\\mmfazrin\\RiderProjects\\Harsha\\18. xUnit [Advanced], Moq and Repository\\16. Integration Test with Response Body\\CRUDTests\\CRUDTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mmfazrin\\.nuget\\packages\\autofixture\\4.17.0\\autofixture.4.17.0.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\mmfazrin\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",

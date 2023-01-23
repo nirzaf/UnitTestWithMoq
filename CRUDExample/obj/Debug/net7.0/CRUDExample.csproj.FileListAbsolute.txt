@@ -97,3 +97,4 @@ C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\
 C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\CRUDExample\obj\Debug\net7.0\CRUDExample.pdb
 C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\CRUDExample\obj\Debug\net7.0\CRUDExample.genruntimeconfig.cache
 C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\CRUDExample\obj\Debug\net7.0\ref\CRUDExample.dll
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\CRUDExample\bin\Debug\net7.0\Bogus.dll

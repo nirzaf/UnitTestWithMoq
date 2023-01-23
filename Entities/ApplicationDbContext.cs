@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Bogus;
 
-using Bogus;
-
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace Entities;
