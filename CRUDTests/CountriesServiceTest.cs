@@ -5,7 +5,7 @@ using ServiceContracts.DTO;
 using ServiceContracts;
 using Services;
 using Xunit;
-using Microsoft.EntityFrameworkCore;
+
 using System.Threading.Tasks;
 using Moq;
 using AutoFixture;

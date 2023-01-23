@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/6IMiTo7h5N0NuEj8X1uzonxbQAA8qYnlkb0qsbvU9OjaGfgwBlwflFisEA+knOH4Fk9PB+l1/gxiDW8oFbVug==",
+  "dgSpecHash": "sAUIfz6P/+frf6hhR24Jhrnr7i7boHr+j6gUwOY8JHyc8KJOtYlUMI4JN8FQHDhv+jYp30E/dhHR553+ZtSFHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mmfazrin\\RiderProjects\\Harsha\\18. xUnit [Advanced], Moq and Repository\\16. Integration Test with Response Body\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mmfazrin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\mmfazrin\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\mmfazrin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

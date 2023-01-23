@@ -4,7 +4,6 @@ using Rotativa.AspNetCore;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;
-using System.IO;
 
 namespace CRUDExample.Controllers;
 
