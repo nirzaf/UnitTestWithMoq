@@ -20,58 +20,33 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Country>().ToTable("Countries");
         modelBuilder.Entity<Person>().ToTable("Persons");
 
+        List<Guid> generatedCountryIds = new List<Guid>();
+        
+        var countries = new Faker<Country>()
+            .RuleFor(c => c.CountryID, f => {
+                var countryId = f.Random.Guid();
+                generatedCountryIds.Add(countryId);
+                return countryId;
+            })
+            .RuleFor(c => c.CountryName, f => f.Address.Country())
+            .Generate(100);
+
+        
+        modelBuilder.Entity<Country>().HasData(countries);
+
         var personList = new Faker<Person>()
             .RuleFor(p => p.PersonID, f => Guid.NewGuid())
             .RuleFor(p => p.PersonName, f => f.Name.FirstName())
             .RuleFor(p => p.Email, f => f.Internet.Email())
             .RuleFor(p => p.DateOfBirth, f => f.Date.Past(100))
-            .RuleFor(p => p.CountryID, f => Guid.NewGuid())
+            .RuleFor(p => p.CountryID, f => f.PickRandom(generatedCountryIds))
             .RuleFor(p => p.Address, f => f.Address.FullAddress())
             .RuleFor(p => p.ReceiveNewsLetters, f => f.Random.Bool())
-            .RuleFor(p => p.TIN, f => f.Random.String2(8, "0123456789"))
+            .RuleFor(p => p.TIN, f => f.Finance.Iban())
             .Generate(1000);
 
         modelBuilder.Entity<Person>().HasData(personList);
-
     }
-
-    //Generate fake data for testing using Bogus nuget package
-
-    /*
-     public class Person
-{
-  [Key]
-  public Guid PersonID { get; set; }
-
-  [StringLength(40)] //nvarchar(40)
-  //[Required]
-  public string? PersonName { get; set; }
-
-  [StringLength(40)] //nvarchar(40)
-  public string? Email { get; set; }
-
-  public DateTime? DateOfBirth { get; set; }
-
-  [StringLength(10)] //nvarchar(100)
-  public string? Gender { get; set; }
-
-  //uniqueidentifier
-  public Guid? CountryID { get; set; }
-
-  [StringLength(200)] //nvarchar(200)
-  public string? Address { get; set; }
-
-  //bit
-  public bool ReceiveNewsLetters { get; set; }
-
-  //[Column("TaxIdentificationNumber", TypeName = "varchar(8)")]
-  public string? TIN { get; set; }
-
-
-  [ForeignKey("CountryID")]
-  public virtual Country? Country { get; set; }
-}
-     */
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
