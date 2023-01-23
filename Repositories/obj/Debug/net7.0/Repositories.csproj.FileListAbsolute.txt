@@ -1,0 +1,17 @@
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\bin\Debug\net7.0\Repositories.deps.json
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\bin\Debug\net7.0\Repositories.dll
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\bin\Debug\net7.0\Repositories.pdb
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\bin\Debug\net7.0\Entities.dll
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\bin\Debug\net7.0\RepositoryContracts.dll
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\bin\Debug\net7.0\Entities.pdb
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\bin\Debug\net7.0\RepositoryContracts.pdb
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\obj\Debug\net7.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\obj\Debug\net7.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\obj\Debug\net7.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\obj\Debug\net7.0\Repositories.AssemblyInfo.cs
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\obj\Debug\net7.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\obj\Debug\net7.0\Repositories.csproj.CopyComplete
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\obj\Debug\net7.0\Repositories.dll
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\obj\Debug\net7.0\refint\Repositories.dll
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\obj\Debug\net7.0\Repositories.pdb
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\Repositories\obj\Debug\net7.0\ref\Repositories.dll

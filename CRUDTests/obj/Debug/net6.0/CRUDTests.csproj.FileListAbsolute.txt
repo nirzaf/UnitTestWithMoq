@@ -1,0 +1,1 @@
+C:\Users\mmfazrin\RiderProjects\Harsha\18. xUnit [Advanced], Moq and Repository\16. Integration Test with Response Body\CRUDTests\obj\Debug\net6.0\CRUDTests.csproj.AssemblyReference.cache
