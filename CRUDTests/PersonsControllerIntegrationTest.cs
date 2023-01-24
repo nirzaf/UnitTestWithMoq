@@ -36,7 +36,7 @@ public class PersonsControllerIntegrationTest : IClassFixture<CustomWebApplicati
 
         string responseBody = await response.Content.ReadAsStringAsync();
 
-        HtmlDocument html = new HtmlDocument();
+        HtmlDocument html = new();
         html.LoadHtml(responseBody);
         var document = html.DocumentNode;
 

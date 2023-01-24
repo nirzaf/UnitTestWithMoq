@@ -163,6 +163,24 @@ public class PersonsController : Controller
         await _personsService.DeletePerson(personUpdateResult.PersonID);
         return RedirectToAction("Index");
     }
+    
+    //Create a Http Get action API to delete first 50 persons
+    [HttpGet]
+    [Route("delete50")] //http://localhost:5000/persons/delete50 
+    public async Task<IActionResult> Delete50()
+    {
+        await _personsService.Delete50Persons();
+        return RedirectToAction("Index");
+    }
+    
+    //Create a Http Get action API to generate 20 Persons
+    [HttpGet]
+    [Route("generate20")] //http://localhost:5000/persons/generate20
+    public async Task<IActionResult> Generate20()
+    {
+        await _personsService.Generate20Persons();
+        return RedirectToAction("Index");
+    }
 
 
     [Route("PersonsPDF")]

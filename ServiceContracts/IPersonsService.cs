@@ -76,4 +76,7 @@ public interface IPersonsService
     /// </summary>
     /// <returns>Returns the memory stream with Excel data of persons</returns>
     Task<MemoryStream> GetPersonsExcel();
+
+    Task Delete50Persons();
+    Task Generate20Persons();
 }

@@ -67,15 +67,10 @@ public class PersonsService : IPersonsService
 
     public async Task<PersonResponse?> GetPersonByPersonID(Guid? personID)
     {
-        if (personID == null)
-            return null;
+        if (personID is null) return null;
 
         Person? person = await _personsRepository.GetPersonByPersonID(personID.Value);
-
-        if (person == null)
-            return null;
-
-        return person.ToPersonResponse();
+        return person?.ToPersonResponse();
     }
 
 
@@ -85,11 +80,11 @@ public class PersonsService : IPersonsService
         {
             nameof(PersonResponse.PersonName) =>
                 await _personsRepository.GetFilteredPersons(temp =>
-                    temp.PersonName.Contains(searchString)),
+                    temp.PersonName!.Contains(searchString!)),
 
             nameof(PersonResponse.Email) =>
                 await _personsRepository.GetFilteredPersons(temp =>
-                    temp.Email.Contains(searchString)),
+                    temp.Email!.Contains(searchString!)),
 
             nameof(PersonResponse.DateOfBirth) =>
                 await _personsRepository.GetFilteredPersons(temp =>
@@ -114,11 +109,11 @@ public class PersonsService : IPersonsService
     }
 
 
-    public async Task<List<PersonResponse>> GetSortedPersons(List<PersonResponse> allPersons, string sortBy,
+    public Task<List<PersonResponse>> GetSortedPersons(List<PersonResponse> allPersons, string sortBy,
         SortOrderOptions sortOrder)
     {
         if (string.IsNullOrEmpty(sortBy))
-            return allPersons;
+            return Task.FromResult(allPersons);
 
         List<PersonResponse> sortedPersons = (sortBy, sortOrder) switch
         {
@@ -172,7 +167,7 @@ public class PersonsService : IPersonsService
             _ => allPersons
         };
 
-        return sortedPersons;
+        return Task.FromResult(sortedPersons);
     }
 
 
@@ -223,11 +218,11 @@ public class PersonsService : IPersonsService
 
     public async Task<MemoryStream> GetPersonsCSV()
     {
-        MemoryStream memoryStream = new MemoryStream();
-        StreamWriter streamWriter = new StreamWriter(memoryStream);
+        MemoryStream memoryStream = new();
+        StreamWriter streamWriter = new(memoryStream);
 
-        CsvConfiguration csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture);
-        CsvWriter csvWriter = new CsvWriter(streamWriter, csvConfiguration);
+        CsvConfiguration csvConfiguration = new(CultureInfo.InvariantCulture);
+        CsvWriter csvWriter = new(streamWriter, csvConfiguration);
 
         //PersonName,Email,DateOfBirth,Age,Gender,Country,Address,ReceiveNewsLetters
         csvWriter.WriteField(nameof(PersonResponse.PersonName));
@@ -263,8 +258,8 @@ public class PersonsService : IPersonsService
 
     public async Task<MemoryStream> GetPersonsExcel()
     {
-        MemoryStream memoryStream = new MemoryStream();
-        using (ExcelPackage excelPackage = new ExcelPackage(memoryStream))
+        MemoryStream memoryStream = new();
+        using (ExcelPackage excelPackage = new(memoryStream))
         {
             ExcelWorksheet workSheet = excelPackage.Workbook.Worksheets.Add("PersonsSheet");
             workSheet.Cells["A1"].Value = "Person Name";
@@ -308,5 +303,17 @@ public class PersonsService : IPersonsService
 
         memoryStream.Position = 0;
         return memoryStream;
+    }
+
+    public Task Delete50Persons()
+    {
+        //delete first 50 persons from the database
+        return _personsRepository.Delete50Persons();
+    }
+
+    public Task Generate20Persons()
+    {
+        //generate 20 persons and insert into the database
+        return _personsRepository.Generate20Persons();
     }
 }

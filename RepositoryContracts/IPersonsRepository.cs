@@ -54,4 +54,7 @@ public interface IPersonsRepository
     /// <param name="person">Person object to update</param>
     /// <returns>Returns the updated person object</returns>
     Task<Person> UpdatePerson(Person person);
+
+    Task Delete50Persons();
+    Task Generate20Persons();
 }
