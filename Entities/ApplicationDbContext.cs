@@ -21,9 +21,10 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Person>().ToTable("Persons");
 
         List<Guid> generatedCountryIds = new List<Guid>();
-        
+
         var countries = new Faker<Country>()
-            .RuleFor(c => c.CountryID, f => {
+            .RuleFor(c => c.CountryID, f =>
+            {
                 var countryId = f.Random.Guid();
                 generatedCountryIds.Add(countryId);
                 return countryId;
@@ -31,7 +32,7 @@ public class ApplicationDbContext : DbContext
             .RuleFor(c => c.CountryName, f => f.Address.Country())
             .Generate(100);
 
-        
+
         modelBuilder.Entity<Country>().HasData(countries);
 
         var personList = new Faker<Person>()

@@ -24,7 +24,7 @@ builder.Services.AddScoped<IPersonsService, PersonsService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
-    , b => b.MigrationsAssembly("CRUDExample"));
+        , b => b.MigrationsAssembly("CRUDExample"));
 });
 
 var app = builder.Build();

@@ -2,44 +2,46 @@
 
 using System.Net.Http;
 using System.Threading.Tasks;
+
 using Xunit;
 
 using Fizzler.Systems.HtmlAgilityPack;
+
 using HtmlAgilityPack;
 
 namespace CRUDTests;
 
 public class PersonsControllerIntegrationTest : IClassFixture<CustomWebApplicationFactory>
 {
- private readonly HttpClient _client;
+    private readonly HttpClient _client;
 
- public PersonsControllerIntegrationTest(CustomWebApplicationFactory factory)
- {
-  _client = factory.CreateClient();
- }
+    public PersonsControllerIntegrationTest(CustomWebApplicationFactory factory)
+    {
+        _client = factory.CreateClient();
+    }
 
 
- #region Index
+    #region Index
 
- [Fact]
- public async Task Index_ToReturnView()
- {
-  //Arrange
+    [Fact]
+    public async Task Index_ToReturnView()
+    {
+        //Arrange
 
-  //Act
-  HttpResponseMessage response = await _client.GetAsync("/Persons/Index");
+        //Act
+        HttpResponseMessage response = await _client.GetAsync("/Persons/Index");
 
-  //Assert
-  response.Should().BeSuccessful(); //2xx
+        //Assert
+        response.Should().BeSuccessful(); //2xx
 
-  string responseBody = await response.Content.ReadAsStringAsync();
+        string responseBody = await response.Content.ReadAsStringAsync();
 
-  HtmlDocument html = new HtmlDocument();
-  html.LoadHtml(responseBody);
-  var document = html.DocumentNode;
+        HtmlDocument html = new HtmlDocument();
+        html.LoadHtml(responseBody);
+        var document = html.DocumentNode;
 
-  document.QuerySelectorAll("table.persons").Should().NotBeNull();
- }
+        document.QuerySelectorAll("table.persons").Should().NotBeNull();
+    }
 
- #endregion
+    #endregion
 }
